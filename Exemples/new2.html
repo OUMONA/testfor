@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .invoice {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .details .from, .details .to {
+            width: 48%;
+        }
+
+        .invoice-details table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .invoice-details th, .invoice-details td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .invoice-details th {
+            background-color: #f5f5f5;
+        }
+
+        .invoice-details tfoot td {
+            font-weight: bold;
+        }
+
+        .payment-info {
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+    <title>Facture de Paiement</title>
+</head>
+<body>
+    <div class="invoice">
+        <header>
+            <h1>FACTURE DE PAIEMENT</h1>
+        </header>
+        <section class="details">
+            <div class="from">
+                <h2>Émise par :</h2>
+                <p>Votre nom / Nom de l'entreprise</p>
+                <p>Adresse : Votre adresse</p>
+                <p>Téléphone : Votre numéro de téléphone</p>
+                <p>E-mail : Votre adresse e-mail</p>
+            </div>
+            <div class="to">
+                <h2>Destinataire :</h2>
+                <p>Nom du client / Nom de l'entreprise du client</p>
+                <p>Adresse : Adresse du client</p>
+            </div>
+        </section>
+        <section class="invoice-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantité</th>
+                        <th>Prix unitaire</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Service 1</td>
+                        <td>2</td>
+                        <td>$50</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Service 2</td>
+                        <td>1</td>
+                        <td>$75</td>
+                        <td>$75</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Sous-total :</td>
+                        <td>$175</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Taxes (TVA 10%) :</td>
+                        <td>$17.5</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total à payer :</td>
+                        <td>$192.5</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="payment-info">
+            <p>Méthodes de paiement acceptées : Carte de crédit, virement bancaire.</p>
+            <p>Échéance de paiement : Date d'échéance</p>
+        </section>
+        <footer>
+            <p>Merci de votre confiance et de votre paiement.</p>
+        </footer>
+    </div>
+</body>
+</html>
